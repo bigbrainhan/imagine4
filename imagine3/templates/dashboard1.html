@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI for Mental Health</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="/index.html#contacts">Contacts</a></li>
+                <li><a href="loginsignup.html" role="button">Login/Signup</a></li>
+                <li><a href="dashboard" >Dashboard</a></li>
+            </ul>
+        </div>
+        <div class="main-content">
+            <h1>Welcome to the Mental Health Tracking Tool</h1>
+            <p>This platform is dedicated to assisting doctors and patients in monitoring and managing mental health disorders. Engage with comprehensive surveys, analyze audio samples, and upload EEG data, all while maintaining strict confidentiality and security.</p>
+            <div class="upload-section">
+                <label for="file-upload" class="custom-file-upload">
+                    Upload .jpg or .png file below
+                </label>
+                <input id="file-upload" type="file" />
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        (function(d, t) {
+        var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+        v.onload = function() {
+        window.voiceflow.chat.load({
+        verify: { projectID: '661ae2529f0a7cb3f08a5cc0' },
+        url: 'https://general-runtime.voiceflow.com',
+        versionID: 'production'
+        });
+        }
+        v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+        })(document, 'script');
+       </script>
+</body>
+</html>

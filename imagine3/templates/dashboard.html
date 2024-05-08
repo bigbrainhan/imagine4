@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI for Stem Cell Research</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="/index.html#contacts">Contacts</a></li>
+                <li><a href="loginsignup.html" role="button">Login/Signup</a></li>
+                <li><a href="dashboard1.html" >Dash1</a></li>
+            </ul>
+        </div>
+        <div class="main-content">
+            <h1>Tail A.I. - Doctor's Portal</h1>
+            <h3>Multi-Headed CNN Model</h3>
+            <p>Welcome to the TAIL AI doctor portal! Please upload the EEG data of the patient for most accurate analysis. (recorded with simple electrode readers), a voice recording of the patient saying anything (or tell them to read this prompt: The sly brown fox jumped over the hungry camel), and finally, questionnaire scores. 
+                (EEG Upload, Voice upload, Tabular upload)
+                </p>
+            <div class="upload-section">
+                <label for="file-upload" class="custom-file-upload">
+                    Upload .JPG file below
+                </label>
+                <input id="file-upload" type="file" />
+            </div>
+            <h3>Outputs and Use</h3>
+            <p>Patient Progression: The chatbot will act as a therapist, and update you with any significant progressions. Whether this means more physical meetings, or medicine administration, the use of the chatbot is to give you insights of the patient. </p>
+            <p>Media Upload and Diagnosis: Our model takes in a .wav file (audio), a .mat file (eeg), and text input to diagnose the patient, and create the case-specific chatbot. Our model is very accurate, but is only used for initial setup and diagnostics (it can be used for intermediate checkups if needed). </p>
+        </div>
+    </div>
+</body>
+</html>
